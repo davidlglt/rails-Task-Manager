@@ -1,0 +1,5 @@
+<%= form_for @task do |t| %>
+  <%= t.text_field :name, :placeholder => "Contenu de votre tache" %>
+  <%= t.text_field :content, :placeholder => "Contenu de votre tache" %>
+  <%= t.submit "Create a new task" %>
+<% end %>

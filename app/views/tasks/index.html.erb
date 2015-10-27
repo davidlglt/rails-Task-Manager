@@ -1,0 +1,8 @@
+<h1>Here your Tasks</h1>
+<p><% @tasks.each do |task| %></p>
+<p>Nom de la tache : <%= task.name %></p>
+<p>Contenu de la tache : <%= task.content %></p>
+<%= link_to "Edit", edit_task_path(task) %>
+<%= link_to "Delete", task_path(task), method: :delete %>
+<hr>
+<% end %>
